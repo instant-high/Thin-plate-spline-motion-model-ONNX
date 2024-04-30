@@ -60,7 +60,7 @@ def main():
     kp_detector = KPDetector(10)
     tpsmm_model = TPSMM(config)
 
-    tpsmm_model.bg_predictor.load_state_dict(checkpoint["bg_predictor"])
+    #tpsmm_model.bg_predictor.load_state_dict(checkpoint["bg_predictor"])
     tpsmm_model.kp_detector.load_state_dict(checkpoint["kp_detector"])
     merge_dict = {}
     for key, value in checkpoint["dense_motion_network"].items():
