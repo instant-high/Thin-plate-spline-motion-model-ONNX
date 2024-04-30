@@ -1,6 +1,18 @@
 # Thin-plate-spline-motion-model - onnx
 Thin plate spline motion model (TPSMM) converted to ONNX
 
+Update 2024-05-01
+
+Faster inference code when running on GPU
+
+Bug fix onnx conversion. removed bg_predictor.
+
+driving - old version - new version:
+
+https://github.com/instant-high/Thin-plate-spline-motion-model-ONNX/assets/77229558/51ac3ac0-a195-492e-ba54-1d6e3ce3f387
+
+.
+
 run inference:
 
 python demo.py --source source.png --driving driving.mp4 --output output.mp4
